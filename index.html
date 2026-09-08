@@ -1,1 +1,54 @@
-<p>No cambies tu autenticidad por aprobación.</p>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Andr4sClub — Catálogo</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <a href="#" class="logo">ANDR4S<span>CLUB</span></a>
+  <nav>
+    <button class="nav-btn activo" data-cat="todo">TODO</button>
+    <button class="nav-btn" data-cat="camisetas">CAMISETAS</button>
+    <button class="nav-btn" data-cat="zapatos">ZAPATOS</button>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>NUEVA<br>COLECCIÓN</h1>
+  <p>No cambies tu autenticidad por aprobación.</p>
+</section>
+
+<section class="grid" id="grid">
+  <!-- Las tarjetas de producto se generan aquí con JS -->
+</section>
+
+<footer>
+  <span>Andr4sClub © 2026 — Cartagena, Colombia</span>
+  <a href="https://wa.me/573116723104" target="_blank">WhatsApp</a>
+</footer>
+
+<!-- Modal de producto -->
+<div class="modal-fondo" id="modalFondo">
+  <div class="modal">
+    <div class="modal-img">
+      <img id="modalImg" src="" alt="">
+    </div>
+    <div class="modal-body">
+      <button class="cerrar" id="cerrarModal">&times;</button>
+      <h2 id="modalNombre"></h2>
+      <div class="precio-grande" id="modalPrecio"></div>
+      <p class="desc" id="modalDesc"></p>
+      <div class="tallas-label">TALLA</div>
+      <div class="tallas" id="modalTallas"></div>
+      <a href="#" target="_blank" class="pedir-btn" id="modalPedir">PEDIR POR WHATSAPP</a>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
