@@ -1,5 +1,6 @@
+
 // ==== CONFIGURA AQUÍ TU NÚMERO DE WHATSAPP (con código de país, sin +, sin espacios) ====
-const NUMERO_WHATSAPP = "570000000000";
+const NUMERO_WHATSAPP = "573116723104";
 
 let productos = [];
 let categoriaActual = "todo";
