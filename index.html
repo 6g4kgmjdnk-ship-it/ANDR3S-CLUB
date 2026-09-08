@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -9,27 +10,26 @@
 <body>
 
 <header>
+  <button class="menu-btn" aria-label="Menú">
+    <span></span><span></span><span></span>
+  </button>
   <a href="#" class="logo-img"><img src="logo.jpeg" alt="Andr4sClub"></a>
-  <nav>
-    <button class="nav-btn activo" data-cat="todo">TODO</button>
-    <button class="nav-btn" data-cat="camisetas">CAMISETAS</button>
-    <button class="nav-btn" data-cat="zapatos">ZAPATOS</button>
-  </nav>
+  <div class="cart-icon">🛒</div>
 </header>
-
-<section class="hero">
-  <h1>NUEVA<br>COLECCIÓN</h1>
-  <p>No cambies tu autenticidad por aprobación.</p>
-</section>
 
 <section class="grid" id="grid">
   <!-- Las tarjetas de producto se generan aquí con JS -->
 </section>
 
-<footer>
-  <span>Andr4sClub © 2026 — Cartagena, Colombia</span>
-  <a href="https://wa.me/573116723104" target="_blank">WhatsApp</a>
-</footer>
+<div class="countdown-bar">
+  <div class="countdown" id="countdown">
+    <div class="c-block"><span id="c-days">00</span><label>DAYS</label></div>
+    <div class="c-block"><span id="c-hours">00</span><label>HOURS</label></div>
+    <div class="c-block"><span id="c-mins">00</span><label>MINS</label></div>
+    <div class="c-block"><span id="c-secs">00</span><label>SECS</label></div>
+  </div>
+  <a href="https://wa.me/573116723104" target="_blank" class="cta-btn">PEDIR POR WHATSAPP</a>
+</div>
 
 <!-- Modal de producto -->
 <div class="modal-fondo" id="modalFondo">
