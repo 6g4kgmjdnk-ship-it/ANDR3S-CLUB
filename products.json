@@ -1,32 +1,93 @@
+
 [
   {
     "id": "cam-001",
-    "nombre": "CAMISETA COSTA OVERSIZE",
+    "nombre": "CAMISETA 1",
     "categoria": "camisetas",
-    "precio": 65000,
+    "precio": 80000,
     "tallas": ["S", "M", "L", "XL"],
-    "imagen": "img/producto-1.jpg",
-    "descripcion": "Algodón pesado 240gsm. Corte oversize. Estampado frontal.",
+    "imagen": "IMG_2691.jpeg",
+    "descripcion": "Algodón pesado 240gsm.",
     "disponible": true
   },
   {
     "id": "cam-002",
-    "nombre": "CAMISETA ANDR4S NEGRA",
+    "nombre": "CAMISETA 2",
     "categoria": "camisetas",
-    "precio": 60000,
-    "tallas": ["M", "L", "XL"],
-    "imagen": "img/producto-2.jpg",
-    "descripcion": "Algodón pesado 240gsm. Corte regular. Logo bordado.",
+    "precio": 80000,
+    "tallas": ["S", "M", "L", "XL"],
+    "imagen": "IMG_2694.jpeg",
+    "descripcion": "Algodón pesado 240gsm.",
     "disponible": true
   },
   {
-    "id": "zap-001",
-    "nombre": "SNEAKERS CLUB EDITION",
-    "categoria": "zapatos",
-    "precio": 180000,
-    "tallas": ["38", "39", "40", "41", "42"],
-    "imagen": "img/producto-3.jpg",
-    "descripcion": "Edición limitada. Suela de goma reforzada.",
+    "id": "cam-003",
+    "nombre": "CAMISETA 3",
+    "categoria": "camisetas",
+    "precio": 80000,
+    "tallas": ["S", "M", "L", "XL"],
+    "imagen": "IMG_2696.jpeg",
+    "descripcion": "Algodón pesado 240gsm.",
+    "disponible": true
+  },
+  {
+    "id": "cam-004",
+    "nombre": "CAMISETA 4",
+    "categoria": "camisetas",
+    "precio": 80000,
+    "tallas": ["S", "M", "L", "XL"],
+    "imagen": "IMG_2698.jpeg",
+    "descripcion": "Algodón pesado 240gsm.",
+    "disponible": true
+  },
+  {
+    "id": "cam-005",
+    "nombre": "CAMISETA 5",
+    "categoria": "camisetas",
+    "precio": 80000,
+    "tallas": ["S", "M", "L", "XL"],
+    "imagen": "IMG_2702.jpeg",
+    "descripcion": "Algodón pesado 240gsm.",
+    "disponible": true
+  },
+  {
+    "id": "cam-006",
+    "nombre": "CAMISETA 6",
+    "categoria": "camisetas",
+    "precio": 80000,
+    "tallas": ["S", "M", "L", "XL"],
+    "imagen": "IMG_2704.jpeg",
+    "descripcion": "Algodón pesado 240gsm.",
+    "disponible": true
+  },
+  {
+    "id": "cam-007",
+    "nombre": "CAMISETA 7",
+    "categoria": "camisetas",
+    "precio": 80000,
+    "tallas": ["S", "M", "L", "XL"],
+    "imagen": "IMG_2708.jpeg",
+    "descripcion": "Algodón pesado 240gsm.",
+    "disponible": true
+  },
+  {
+    "id": "cam-008",
+    "nombre": "CAMISETA 8",
+    "categoria": "camisetas",
+    "precio": 80000,
+    "tallas": ["S", "M", "L", "XL"],
+    "imagen": "IMG_2709.jpeg",
+    "descripcion": "Algodón pesado 240gsm.",
+    "disponible": true
+  },
+  {
+    "id": "cam-009",
+    "nombre": "CAMISETA 9",
+    "categoria": "camisetas",
+    "precio": 80000,
+    "tallas": ["S", "M", "L", "XL"],
+    "imagen": "IMG_2710.jpeg",
+    "descripcion": "Algodón pesado 240gsm.",
     "disponible": true
   }
 ]
