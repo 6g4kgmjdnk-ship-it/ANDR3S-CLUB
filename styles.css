@@ -28,23 +28,25 @@ header {
   padding: 18px 24px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  position: relative;
 }
 
-.logo {
-  font-family: 'Arial Black', Arial, sans-serif;
-  font-weight: 900;
-  font-size: 22px;
-  letter-spacing: -0.5px;
-  text-decoration: none;
-  color: var(--blanco);
+.logo-img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-.logo span { color: var(--rojo); }
+.logo-img img {
+  height: 44px;
+  display: block;
+}
 
 nav {
   display: flex;
   gap: 22px;
+  margin-left: auto;
 }
 
 .nav-btn {
