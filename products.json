@@ -1,0 +1,32 @@
+[
+  {
+    "id": "cam-001",
+    "nombre": "CAMISETA COSTA OVERSIZE",
+    "categoria": "camisetas",
+    "precio": 65000,
+    "tallas": ["S", "M", "L", "XL"],
+    "imagen": "img/producto-1.jpg",
+    "descripcion": "Algodón pesado 240gsm. Corte oversize. Estampado frontal.",
+    "disponible": true
+  },
+  {
+    "id": "cam-002",
+    "nombre": "CAMISETA ANDR4S NEGRA",
+    "categoria": "camisetas",
+    "precio": 60000,
+    "tallas": ["M", "L", "XL"],
+    "imagen": "img/producto-2.jpg",
+    "descripcion": "Algodón pesado 240gsm. Corte regular. Logo bordado.",
+    "disponible": true
+  },
+  {
+    "id": "zap-001",
+    "nombre": "SNEAKERS CLUB EDITION",
+    "categoria": "zapatos",
+    "precio": 180000,
+    "tallas": ["38", "39", "40", "41", "42"],
+    "imagen": "img/producto-3.jpg",
+    "descripcion": "Edición limitada. Suela de goma reforzada.",
+    "disponible": true
+  }
+]
