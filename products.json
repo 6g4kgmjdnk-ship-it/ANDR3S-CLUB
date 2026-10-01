@@ -90,4 +90,12 @@
     "descripcion": "Algodón pesado 240gsm.",
     "disponible": true
   }
-]
+]{
+    "id": "pan-001",
+    "nombre": "PANTALONETA 1",
+    "categoria": "pantalonetas",
+    "precio": 80000,
+    "tallas": ["S", "M", "L", "XL"],
+    "imagen": "IMG_3424.jpeg",
+    "descripcion": "Algodón pesado 240gsm.",
+    "disponible": true
