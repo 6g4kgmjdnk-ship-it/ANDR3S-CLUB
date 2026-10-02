@@ -1,104 +1,18 @@
-
 [
-  {
-    "id": "cam-001",
-    "nombre": "CAMISETA 1",
-    "categoria": "camisetas",
-    "precio": 80000,
-    "tallas": ["S", "M", "L", "XL"],
-    "imagen": "IMG_2691.jpeg",
-    "descripcion": "Algodón pesado 240gsm.",
-    "disponible": true
-  },
-  {
-    "id": "cam-002",
-    "nombre": "CAMISETA 2",
-    "categoria": "camisetas",
-    "precio": 80000,
-    "tallas": ["S", "M", "L", "XL"],
-    "imagen": "IMG_2694.jpeg",
-    "descripcion": "Algodón pesado 240gsm.",
-    "disponible": true
-  },
-  {
-    "id": "cam-003",
-    "nombre": "CAMISETA 3",
-    "categoria": "camisetas",
-    "precio": 80000,
-    "tallas": ["S", "M", "L", "XL"],
-    "imagen": "IMG_2696.jpeg",
-    "descripcion": "Algodón pesado 240gsm.",
-    "disponible": true
-  },
-  {
-    "id": "cam-004",
-    "nombre": "CAMISETA 4",
-    "categoria": "camisetas",
-    "precio": 80000,
-    "tallas": ["S", "M", "L", "XL"],
-    "imagen": "IMG_2698.jpeg",
-    "descripcion": "Algodón pesado 240gsm.",
-    "disponible": true
-  },
-  {
-    "id": "cam-005",
-    "nombre": "CAMISETA 5",
-    "categoria": "camisetas",
-    "precio": 80000,
-    "tallas": ["S", "M", "L", "XL"],
-    "imagen": "IMG_2702.jpeg",
-    "descripcion": "Algodón pesado 240gsm.",
-    "disponible": true
-  },
-  {
-    "id": "cam-006",
-    "nombre": "CAMISETA 6",
-    "categoria": "camisetas",
-    "precio": 80000,
-    "tallas": ["S", "M", "L", "XL"],
-    "imagen": "IMG_2704.jpeg",
-    "descripcion": "Algodón pesado 240gsm.",
-    "disponible": true
-  },
-  {
-    "id": "cam-007",
-    "nombre": "CAMISETA 7",
-    "categoria": "camisetas",
-    "precio": 80000,
-    "tallas": ["S", "M", "L", "XL"],
-    "imagen": "IMG_2708.jpeg",
-    "descripcion": "Algodón pesado 240gsm.",
-    "disponible": true
-  },
-  {
-    "id": "cam-008",
-    "nombre": "CAMISETA 8",
-    "categoria": "camisetas",
-    "precio": 80000,
-    "tallas": ["S", "M", "L", "XL"],
-    "imagen": "IMG_2709.jpeg",
-    "descripcion": "Algodón pesado 240gsm.",
-    "disponible": true
-  },
-  {
-    "id": "cam-009",
-    "nombre": "CAMISETA 9",
-    "categoria": "camisetas",
-    "precio": 80000,
-    "tallas": ["S", "M", "L", "XL"],
-    "imagen": "IMG_2710.jpeg",
-    "descripcion": "Algodón pesado 240gsm.",
-    "disponible": true
-  },
-    {
-    "id": "pan-001",
-    "nombre": "PANTALONETA 1",
-    "categoria": "pantalonetas",
-    "precio": 80000,
-    "tallas": ["S", "M", "L", "XL"],
-    "imagen": "IMG_3424.jpeg",
-    "descripcion": "Algodón pesado 240gsm.",
-    "disponible": true
-  }
+  {"id":1,"nombre":"Camiseta Invasión OVNI","categoria":"camisetas","precio":80000,"imagen":"IMG_3202.jpeg"},
+  {"id":2,"nombre":"Camiseta Invasión OVNI Negra","categoria":"camisetas","precio":80000,"imagen":"IMG_2694.jpeg"},
+  {"id":3,"nombre":"Camiseta Ángel Negra","categoria":"camisetas","precio":80000,"imagen":"IMG_3196.jpeg"},
+  {"id":4,"nombre":"Camiseta Athletic Blanca","categoria":"camisetas","precio":80000,"imagen":"IMG_3193.jpeg"},
+  {"id":5,"nombre":"Camiseta Piloto Negra","categoria":"camisetas","precio":80000,"imagen":"IMG_2709.jpeg"},
+  {"id":6,"nombre":"Camiseta Letras Multicolor Negra","categoria":"camisetas","precio":80000,"imagen":"IMG_2710.jpeg"},
+  {"id":7,"nombre":"Camiseta Ciudad Azul Negra","categoria":"camisetas","precio":80000,"imagen":"IMG_2702.jpeg"},
+  {"id":8,"nombre":"Camiseta Ciudad Azul Blanca","categoria":"camisetas","precio":80000,"imagen":"IMG_2698.jpeg"},
+  {"id":9,"nombre":"Camiseta Corona Negra","categoria":"camisetas","precio":80000,"imagen":"IMG_2700.jpeg"},
+  {"id":10,"nombre":"Short Jean Crema","categoria":"shorts","precio":0,"imagen":"IMG_3734.jpeg"},
+  {"id":11,"nombre":"Short Jean Verde","categoria":"shorts","precio":0,"imagen":"IMG_3731.jpeg"},
+  {"id":12,"nombre":"Short Nylon Negro","categoria":"shorts","precio":0,"imagen":"IMG_3732.jpeg"},
+  {"id":13,"nombre":"Short Nylon Rosa","categoria":"shorts","precio":0,"imagen":"IMG_3727.jpeg"},
+  {"id":14,"nombre":"Short Felpa Café","categoria":"shorts","precio":0,"imagen":"IMG_3729.jpeg"},
+  {"id":15,"nombre":"Short Felpa Gris","categoria":"shorts","precio":0,"imagen":"IMG_3726.jpeg"},
+  {"id":16,"nombre":"Short Felpa Negro","categoria":"shorts","precio":0,"imagen":"IMG_3725.jpeg"}
 ]
-
