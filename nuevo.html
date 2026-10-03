@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Andr4sClub</title>
+  <style>
+    :root {
+      --negro: #000;
+      --blanco: #fff;
+      --amarillo: #ffd91a;
+      --rojo: #a31d14;
+      --gris: #111;
+      --fuente: "Courier New", Courier, monospace;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body {
+      background: var(--negro);
+      color: var(--amarillo);
+      font-family: var(--fuente);
+    }
+
+    /* Barra roja de arriba */
+    .barra {
+      height: 8px;
+      background: var(--rojo);
+    }
+
+    /* Header: menú, logo, carrito */
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 16px;
+      background: var(--negro);
+    }
+
+    .menu {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      width: 36px;
+      background: none;
+      border: 0;
+      cursor: pointer;
+    }
+    .menu span {
+      display: block;
+      height: 5px;
+      border-radius: 3px;
+      background: var(--amarillo);
+    }
+
+    .logo img {
+      display: block;
+      height: 52px;
+      width: auto;
+    }
+
+    .carrito {
+      background: none;
+      border: 0;
+      cursor: pointer;
+      color: var(--amarillo);
+    }
+    .carrito svg { width: 38px; height: 38px; display: block; }
+
+    /* Cuadrícula de productos */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 28px 12px;
+      padding: 16px 12px 48px;
+    }
+
+    .producto {
+      text-align: center;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .foto {
+      aspect-ratio: 4 / 5;
+      background: var(--gris);
+      overflow: hidden;
+    }
+    .foto img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .nombre {
+      margin-top: 14px;
+      font-size: 15px;
+      line-height: 1.6;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .precio {
+      margin-top: 4px;
+      font-size: 15px;
+      letter-spacing: 0.08em;
+    }
+
+    .producto:focus-visible,
+    .menu:focus-visible,
+    .carrito:focus-visible {
+      outline: 2px solid var(--blanco);
+      outline-offset: 4px;
+    }
+
+    @media (min-width: 700px) {
+      .grid {
+        grid-template-columns: repeat(4, 1fr);
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="barra"></div>
+
+  <header class="header">
+    <button class="menu" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+
+    <a class="logo" href="./">
+      <!-- CAMBIA logo.png por el nombre real de tu logo en GitHub -->
+      <img src="logo.png" alt="Andr4sClub">
+    </a>
+
+    <button class="carrito" aria-label="Ver carrito">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M2 3h3l2.4 12.2a2 2 0 0 0 2 1.6h8.2a2 2 0 0 0 2-1.5L21 7H6"/>
+        <circle cx="10" cy="20.5" r="1.3" fill="currentColor"/>
+        <circle cx="18" cy="20.5" r="1.3" fill="currentColor"/>
+      </svg>
+    </button>
+  </header>
+
+  <main class="grid">
+
+    <!-- Producto de prueba. En el paso 2 estos se llenan solos desde products.json -->
+    <a class="producto" href="#">
+      <div class="foto"><img src="images/producto1.jpg" alt="" onerror="this.style.display='none'"></div>
+      <p class="nombre">Camiseta Andr4s [Negra]</p>
+      <p class="precio">$80.000</p>
+    </a>
+
+    <a class="producto" href="#">
+      <div class="foto"><img src="images/producto2.jpg" alt="" onerror="this.style.display='none'"></div>
+      <p class="nombre">Camiseta Andr4s [Blanca]</p>
+      <p class="precio">$80.000</p>
+    </a>
+
+    <a class="producto" href="#">
+      <div class="foto"><img src="images/producto3.jpg" alt="" onerror="this.style.display='none'"></div>
+      <p class="nombre">Camiseta Andr4s [Gris]</p>
+      <p class="precio">$80.000</p>
+    </a>
+
+    <a class="producto" href="#">
+      <div class="foto"><img src="images/producto4.jpg" alt="" onerror="this.style.display='none'"></div>
+      <p class="nombre">Camiseta Andr4s [Beige]</p>
+      <p class="precio">$80.000</p>
+    </a>
+
+  </main>
+
+</body>
+</html>
