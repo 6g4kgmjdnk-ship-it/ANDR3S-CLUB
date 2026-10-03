@@ -8,11 +8,11 @@
   {"id":7,"nombre":"Camiseta Ciudad Azul Negra","categoria":"camisetas","precio":80000,"imagen":"IMG_2702.jpeg"},
   {"id":8,"nombre":"Camiseta Ciudad Azul Blanca","categoria":"camisetas","precio":80000,"imagen":"IMG_2698.jpeg"},
   {"id":9,"nombre":"Camiseta Corona Negra","categoria":"camisetas","precio":80000,"imagen":"IMG_2700.jpeg"},
-  {"id":10,"nombre":"Short Jean Crema","categoria":"shorts","precio":80,"imagen":"IMG_3734.jpeg"},
-  {"id":11,"nombre":"Short Jean Verde","categoria":"shorts","precio":70,"imagen":"IMG_3731.jpeg"},
-  {"id":12,"nombre":"Short Nylon Negro","categoria":"shorts","precio":80,"imagen":"IMG_3732.jpeg"},
-  {"id":13,"nombre":"Short Nylon Rosa","categoria":"shorts","precio":80,"imagen":"IMG_3727.jpeg"},
-  {"id":14,"nombre":"Short Felpa Café","categoria":"shorts","precio":80,"imagen":"IMG_3729.jpeg"},
-  {"id":15,"nombre":"Short Felpa Gris","categoria":"shorts","precio":70,"imagen":"IMG_3726.jpeg"},
-  {"id":16,"nombre":"Short Felpa Negro","categoria":"shorts","precio":70,"imagen":"IMG_3725.jpeg"}
+{"id":10,"nombre":"Short Jean Crema","categoria":"shorts","precio":90000,"imagen":"IMG_3818.jpeg"},
+  {"id":11,"nombre":"Short Jean Verde","categoria":"shorts","precio":80000,"imagen":"IMG_3731.jpeg"},
+  {"id":12,"nombre":"Short Nylon Negro","categoria":"shorts","precio":80000,"imagen":"IMG_3732.jpeg"},
+  {"id":13,"nombre":"Short Nylon Rosa","categoria":"shorts","precio":80000,"imagen":"IMG_3727.jpeg"},
+  {"id":14,"nombre":"Short Felpa Café","categoria":"shorts","precio":80000,"imagen":"IMG_3729.jpeg"},
+  {"id":15,"nombre":"Short Felpa Gris","categoria":"shorts","precio":70000,"imagen":"IMG_3726.jpeg"},
+  {"id":16,"nombre":"Short Felpa Negro","categoria":"shorts","precio":70000,"imagen":"IMG_3725.jpeg"}
 ]
