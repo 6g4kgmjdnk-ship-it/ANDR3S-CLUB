@@ -91,15 +91,36 @@
     }
 
     .foto {
+      position: relative;
       aspect-ratio: 4 / 5;
       background: var(--gris);
       overflow: hidden;
     }
-    .foto img {
-      display: block;
+    .tira {
+      display: flex;
+      height: 100%;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scrollbar-width: none;
+    }
+    .tira::-webkit-scrollbar { display: none; }
+    .tira img {
+      flex: 0 0 100%;
       width: 100%;
       height: 100%;
       object-fit: contain;
+      scroll-snap-align: center;
+    }
+    .cuenta {
+      position: absolute;
+      right: 8px;
+      bottom: 8px;
+      padding: 2px 8px;
+      background: rgba(0, 0, 0, 0.75);
+      color: var(--amarillo);
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      pointer-events: none;
     }
 
     .nombre {
@@ -175,7 +196,7 @@
   <main class="grid" id="grid"></main>
 
   <script>
-    // CAMBIA este número por tu WhatsApp: con 57 adelante, sin + ni espacios
+    // Tu número de WhatsApp: con 57 adelante, sin + ni espacios
     const WHATSAPP = "573116723104";
 
     const grid = document.getElementById("grid");
@@ -184,21 +205,40 @@
       return "$" + Number(n).toLocaleString("es-CO");
     }
 
-    function tarjeta(p) {
+    function tarjeta(p, extras) {
       const mensaje = "Hola Andr4sClub, quiero pedir: " + p.nombre + " (" + pesos(p.precio) + ")";
       const link = "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent(mensaje);
+
+      // Primero la foto de products.json y después las de fotos.json
+      const fotos = [p.imagen].concat(extras[String(p.id)] || []);
 
       const caja = document.createElement("article");
       caja.className = "producto";
 
       const foto = document.createElement("div");
       foto.className = "foto";
-      const img = document.createElement("img");
-      img.src = encodeURI(p.imagen);
-      img.alt = p.nombre;
-      img.loading = "lazy";
-      img.onerror = function () { img.style.display = "none"; };
-      foto.appendChild(img);
+      const tira = document.createElement("div");
+      tira.className = "tira";
+      fotos.forEach(function (nombreFoto) {
+        const img = document.createElement("img");
+        img.src = encodeURI(nombreFoto);
+        img.alt = p.nombre;
+        img.loading = "lazy";
+        img.onerror = function () { img.remove(); };
+        tira.appendChild(img);
+      });
+      foto.appendChild(tira);
+
+      if (fotos.length > 1) {
+        const cuenta = document.createElement("span");
+        cuenta.className = "cuenta";
+        cuenta.textContent = "1/" + fotos.length;
+        tira.addEventListener("scroll", function () {
+          const i = Math.round(tira.scrollLeft / tira.clientWidth) + 1;
+          cuenta.textContent = i + "/" + tira.children.length;
+        });
+        foto.appendChild(cuenta);
+      }
 
       const nombre = document.createElement("p");
       nombre.className = "nombre";
@@ -219,10 +259,12 @@
       return caja;
     }
 
-    fetch("products.json")
-      .then(function (r) { return r.json(); })
-      .then(function (productos) {
-        productos.forEach(function (p) { grid.appendChild(tarjeta(p)); });
+    Promise.all([
+      fetch("products.json").then(function (r) { return r.json(); }),
+      fetch("fotos.json").then(function (r) { return r.json(); }).catch(function () { return {}; })
+    ])
+      .then(function (datos) {
+        datos[0].forEach(function (p) { grid.appendChild(tarjeta(p, datos[1])); });
       })
       .catch(function () {
         grid.innerHTML = '<p class="vacio">No se pudieron cargar los productos.</p>';
