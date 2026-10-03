@@ -1,5 +1,19 @@
 [
   {
+    "id": 8,
+    "nombre": "Camiseta Corona Blanca",
+    "categoria": "camisetas",
+    "precio": 80000,
+    "imagen": "IMG_2698.jpeg"
+  },
+  {
+    "id": 9,
+    "nombre": "Camiseta Corona Negra",
+    "categoria": "camisetas",
+    "precio": 80000,
+    "imagen": "IMG_2700.jpeg"
+  },
+  {
     "id": 10,
     "nombre": "Short Jean Crema",
     "categoria": "shorts",
