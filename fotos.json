@@ -1,7 +1,51 @@
-{
-  "10": ["IMG_3732.jpeg", "IMG_3733.jpeg", "IMG_3734.jpeg"],
-  "11": ["IMG_3737.jpeg", "IMG_3738.jpeg"],
-  "12": ["IMG_3736.jpeg"],
-  "13": ["IMG_3731.jpeg"],
-  "15": ["IMG_3730.jpeg"]
-}
+[
+  {
+    "id": 10,
+    "nombre": "Short Jean Crema",
+    "categoria": "shorts",
+    "precio": 80000,
+    "imagen": "IMG_3734.jpeg"
+  },
+  {
+    "id": 11,
+    "nombre": "Short Jean Verde",
+    "categoria": "shorts",
+    "precio": 80000,
+    "imagen": "IMG_3733.jpeg"
+  },
+  {
+    "id": 12,
+    "nombre": "Short Nylon Negro",
+    "categoria": "shorts",
+    "precio": 80000,
+    "imagen": "IMG_3732.jpeg"
+  },
+  {
+    "id": 13,
+    "nombre": "Short Nylon Rosa",
+    "categoria": "shorts",
+    "precio": 80000,
+    "imagen": "IMG_3731.jpeg"
+  },
+  {
+    "id": 14,
+    "nombre": "Short Felpa Café",
+    "categoria": "shorts",
+    "precio": 80000,
+    "imagen": "IMG_3736.jpeg"
+  },
+  {
+    "id": 15,
+    "nombre": "Short Felpa Gris",
+    "categoria": "shorts",
+    "precio": 80000,
+    "imagen": "IMG_3196.jpeg"
+  },
+  {
+    "id": 16,
+    "nombre": "Short Sudadera Negro",
+    "categoria": "shorts",
+    "precio": 80000,
+    "imagen": "IMG_3193.jpeg"
+  }
+]
