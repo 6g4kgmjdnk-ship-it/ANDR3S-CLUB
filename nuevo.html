@@ -115,6 +115,25 @@
       letter-spacing: 0.08em;
     }
 
+    .pedir {
+      display: block;
+      width: 100%;
+      margin-top: 12px;
+      padding: 12px 8px;
+      background: none;
+      border: 2px solid var(--amarillo);
+      color: var(--amarillo);
+      font-family: var(--fuente);
+      font-size: 14px;
+      letter-spacing: 0.08em;
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .pedir:active { background: var(--amarillo); color: var(--negro); }
+    .pedir:focus-visible { outline: 2px solid var(--blanco); outline-offset: 3px; }
+    .vacio { grid-column: 1 / -1; text-align: center; padding: 40px 0; }
+
     .producto:focus-visible,
     .menu:focus-visible,
     .carrito:focus-visible {
@@ -153,34 +172,62 @@
     </button>
   </header>
 
-  <main class="grid">
+  <main class="grid" id="grid"></main>
 
-    <!-- Producto de prueba. En el paso 2 estos se llenan solos desde products.json -->
-    <a class="producto" href="#">
-      <div class="foto"><img src="images/producto1.jpg" alt="" onerror="this.style.display='none'"></div>
-      <p class="nombre">Camiseta Andr4s [Negra]</p>
-      <p class="precio">$80.000</p>
-    </a>
+  <script>
+    // CAMBIA este número por tu WhatsApp: con 57 adelante, sin + ni espacios
+    const WHATSAPP = "573000000000";
 
-    <a class="producto" href="#">
-      <div class="foto"><img src="images/producto2.jpg" alt="" onerror="this.style.display='none'"></div>
-      <p class="nombre">Camiseta Andr4s [Blanca]</p>
-      <p class="precio">$80.000</p>
-    </a>
+    const grid = document.getElementById("grid");
 
-    <a class="producto" href="#">
-      <div class="foto"><img src="images/producto3.jpg" alt="" onerror="this.style.display='none'"></div>
-      <p class="nombre">Camiseta Andr4s [Gris]</p>
-      <p class="precio">$80.000</p>
-    </a>
+    function pesos(n) {
+      return "$" + Number(n).toLocaleString("es-CO");
+    }
 
-    <a class="producto" href="#">
-      <div class="foto"><img src="images/producto4.jpg" alt="" onerror="this.style.display='none'"></div>
-      <p class="nombre">Camiseta Andr4s [Beige]</p>
-      <p class="precio">$80.000</p>
-    </a>
+    function tarjeta(p) {
+      const mensaje = "Hola Andr4sClub, quiero pedir: " + p.nombre + " (" + pesos(p.precio) + ")";
+      const link = "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent(mensaje);
 
-  </main>
+      const caja = document.createElement("article");
+      caja.className = "producto";
+
+      const foto = document.createElement("div");
+      foto.className = "foto";
+      const img = document.createElement("img");
+      img.src = encodeURI(p.imagen);
+      img.alt = p.nombre;
+      img.loading = "lazy";
+      img.onerror = function () { img.style.display = "none"; };
+      foto.appendChild(img);
+
+      const nombre = document.createElement("p");
+      nombre.className = "nombre";
+      nombre.textContent = p.nombre;
+
+      const precio = document.createElement("p");
+      precio.className = "precio";
+      precio.textContent = pesos(p.precio);
+
+      const boton = document.createElement("a");
+      boton.className = "pedir";
+      boton.href = link;
+      boton.target = "_blank";
+      boton.rel = "noopener";
+      boton.textContent = "Pedir por WhatsApp";
+
+      caja.append(foto, nombre, precio, boton);
+      return caja;
+    }
+
+    fetch("products.json")
+      .then(function (r) { return r.json(); })
+      .then(function (productos) {
+        productos.forEach(function (p) { grid.appendChild(tarjeta(p)); });
+      })
+      .catch(function () {
+        grid.innerHTML = '<p class="vacio">No se pudieron cargar los productos.</p>';
+      });
+  </script>
 
 </body>
 </html>
