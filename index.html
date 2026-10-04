@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ANDR3S CLUB — Catálogo Web</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    body {
+      background-color: #000000;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 40px;
+    }
+
+    /* Encabezado superior */
+    header {
+      width: 100%;
+      max-width: 500px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+      background-color: #000000;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .menu-icon, .cart-icon {
+      width: 28px;
+      height: 28px;
+      fill: #e0b034;
+      cursor: pointer;
+    }
+
+    .logo {
+      text-align: center;
+    }
+
+    .logo-title {
+      font-size: 26px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      color: #ffffff;
+      font-family: 'Arial Black', sans-serif;
+    }
+
+    .logo-subtitle {
+      font-size: 11px;
+      letter-spacing: 6px;
+      color: #cccccc;
+      margin-top: -2px;
+    }
+
+    /* Cuadrícula de Productos */
+    .catalog-grid {
+      width: 100%;
+      max-width: 500px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+      padding: 10px 15px;
+    }
+
+    .product-card {
+      background-color: #0a0a0a;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding-bottom: 10px;
+    }
+
+    .product-image-container {
+      width: 100%;
+      aspect-ratio: 1 / 1.1;
+      background-color: #121212;
+      overflow: hidden;
+      margin-bottom: 12px;
+    }
+
+    .product-image-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .product-title {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 12px;
+      font-weight: bold;
+      color: #d8c27a;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 0 5px;
+      margin-bottom: 6px;
+      min-height: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .product-price {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 14px;
+      color: #d8c27a;
+      margin-bottom: 10px;
+    }
+
+    .btn-whatsapp {
+      width: 90%;
+      border: 1px solid #e0b034;
+      background: transparent;
+      color: #e0b034;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 10px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      padding: 10px 4px;
+      text-transform: uppercase;
+      text-decoration: none;
+      display: inline-block;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .btn-whatsapp:active {
+      background-color: #e0b034;
+      color: #000000;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Encabezado con Logo y Menú -->
+  <header>
+    <svg class="menu-icon" viewBox="0 0 24 24">
+      <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+    </svg>
+    <div class="logo">
+      <div class="logo-title">ANDR3S</div>
+      <div class="logo-subtitle">CLUB</div>
+    </div>
+    <svg class="cart-icon" viewBox="0 0 24 24">
+      <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/>
+    </svg>
+  </header>
+
+  <!-- Lista de Productos -->
+  <main class="catalog-grid">
+
+    <!-- Producto 1 -->
+    <div class="product-card">
+      <div class="product-image-container">
+        <img src="IMG_2694.jpeg" alt="Camiseta Corona Negra">
+      </div>
+      <div class="product-title">Camiseta Corona Negra</div>
+      <div class="product-price">$80.000</div>
+      <a href="https://wa.me/573000000000?text=Hola,%20quiero%20pedir%20la%20Camiseta%20Corona%20Negra" class="btn-whatsapp">
+        Pedir por WhatsApp
+      </a>
+    </div>
+
+    <!-- Producto 2 -->
+    <div class="product-card">
+      <div class="product-image-container">
+        <img src="IMG_2696.jpeg" alt="Short Jean Crema">
+      </div>
+      <div class="product-title">Short Jean Crema</div>
+      <div class="product-price">$65.000</div>
+      <a href="https://wa.me/573000000000?text=Hola,%20quiero%20pedir%20el%20Short%20Jean%20Crema" class="btn-whatsapp">
+        Pedir por WhatsApp
+      </a>
+    </div>
+
+    <!-- Producto 3 -->
+    <div class="product-card">
+      <div class="product-image-container">
+        <img src="IMG_2698.jpeg" alt="Short Jean Verde">
+      </div>
+      <div class="product-title">Short Jean Verde</div>
+      <div class="product-price">$60.000</div>
+      <a href="https://wa.me/573000000000?text=Hola,%20quiero%20pedir%20el%20Short%20Jean%20Verde" class="btn-whatsapp">
+        Pedir por WhatsApp
+      </a>
+    </div>
+
+    <!-- Producto 4 -->
+    <div class="product-card">
+      <div class="product-image-container">
+        <img src="IMG_2700.jpeg" alt="Short Nylon Negro">
+      </div>
+      <div class="product-title">Short Nylon Negro</div>
+      <div class="product-price">$55.000</div>
+      <a href="https://wa.me/573000000000?text=Hola,%20quiero%20pedir%20el%20Short%20Nylon%20Negro" class="btn-whatsapp">
+        Pedir por WhatsApp
+      </a>
+    </div>
+
+  </main>
+
+</body>
+</html>
