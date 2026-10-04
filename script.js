@@ -1,4 +1,4 @@
-// ==== CONFIGURA AQUÍ TU NÚMERO DE WHATSAPP ====
+CONFIGURA AQUÍ TU NÚMERO DE WHATSAPP ====
 const NUMERO_WHATSAPP = "573116723104";
 // ==== FRASE DE MARCA ====
 // "No cambies tu autenticidad por aprobación."
