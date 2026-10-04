@@ -1,5 +1,4 @@
-[
-  {"id":1,"nombre":"Camiseta Invasión OVNI","categoria":"camisetas","precio":80000,"imagen":"IMG_3202.jpeg"},
+id":1,"nombre":"Camiseta Invasión OVNI","categoria":"camisetas","precio":80000,"imagen":"IMG_3202.jpeg"},
   {"id":2,"nombre":"Camiseta Invasión OVNI Negra","categoria":"camisetas","precio":80000,"imagen":"IMG_2694.jpeg"},
   {"id":3,"nombre":"Camiseta Ángel Negra","categoria":"camisetas","precio":80000,"imagen":"IMG_3196.jpeg"},
   {"id":4,"nombre":"Camiseta Athletic Blanca","categoria":"camisetas","precio":80000,"imagen":"IMG_3193.jpeg"},
